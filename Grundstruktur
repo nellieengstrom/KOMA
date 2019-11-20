@@ -70,21 +70,6 @@ function StartTraining(props) {
         {/* CATEGORY should be a drop down list*/}
 
         {/* SLUTADE MED ATT FÖRSÖKA FÅ DROP-DOWN LISTAN ATT FUNGERA */}
-        
-
-        <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Dropdown Button
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-
-
         <div> 
         <select>
           <option value="CATEGORY">CATEGORY</option>
