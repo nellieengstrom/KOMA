@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-
 
 function App() { 
   return (
-    <div className="Container">
+    <div className="ContainerBody">
     
       <Router>
 
@@ -66,19 +64,21 @@ function StartTraining(props) {
 
         <div><h3>EXERCISE FOR "NAME"</h3></div>
 
-        <div><h3>CATEGORY</h3></div>
         {/* CATEGORY should be a drop down list*/}
 
         {/* SLUTADE MED ATT FÖRSÖKA FÅ DROP-DOWN LISTAN ATT FUNGERA */}
-        <div> 
-        <select>
-          <option value="CATEGORY">CATEGORY</option>
-          <option value="AGILITY">AGILITY</option>
-          <option value="OBEDIENCE">OBEDIENCE</option>
-          <option value="TRICKS">TRICKS</option>
-        </select>
+        
+        <div id="containerDropdown">
+          <ul>
+            <li> CATEGORY 
+              <ul> 
+                <li> AGILITY </li>
+                <li> OBEDIENCE </li>
+                <li> TRICKS </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-
       </div>
     );
   }
@@ -93,31 +93,32 @@ function AllTraining(props) {
         </div>
 
         <div> <h3> ALL TRAINING </h3> </div>
-        <div> <h3> AGILITY </h3> </div>
+   
 
         {/* Staple laying down with the percent */}
-        <ul>
-            <li>
-              <Link to="/agility"> <div> <h3> AGILITY </h3> </div></Link>
-            </li>
+        <div id="containerAlltrain">
+          <ul>
+              <li>
+                <Link to="/agility"> <div> <h3> AGILITY </h3> </div></Link>
+              </li>
 
-            <li>
-              <Link to="/agility"> <div> <h3> OBEDIENCE </h3> </div></Link>
-            </li>
+              <li>
+                <Link to="/agility"> <div> <h3> OBEDIENCE </h3> </div></Link>
+              </li>
 
-            <li>
-              <Link to="/agility"> <div> <h3> TRICKS </h3> </div></Link>
-            </li>
+              <li>
+                <Link to="/agility"> <div> <h3> TRICKS </h3> </div></Link>
+              </li>
 
-            <li>
-              <Link to="/agility"> <div> <h3> HUNT </h3> </div></Link>
-            </li>
+              <li>
+                <Link to="/agility"> <div> <h3> HUNT </h3> </div></Link>
+              </li>
 
-            <li>
-              <Link to="/agility"> <div> <h3> SOCIAL TRAINING </h3> </div></Link>
-            </li>
-
-        </ul>
+              <li>
+                <Link to="/agility"> <div> <h3> SOCIAL TRAINING </h3> </div></Link>
+              </li>
+          </ul>
+        </div>
 
       </div>
           
