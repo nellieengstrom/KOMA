@@ -1,0 +1,90 @@
+/***********************************/
+/* GENERAL CSS */
+
+ /* Margins and color of the body, ish the background
+ Not sure if this is needed when using ContainerBody*/
+body {
+  background-color: #FBD0C0;
+  margin-top: 20px;
+
+}
+
+/* A container for the body to make it responsive */
+.ContainerBody {
+  width: 90%;
+  height: 667px;
+  overflow: hidden;
+  background: #FBD0C0;
+  margin: 20px auto;
+  padding: 20px;
+  color: white;
+}
+/***********************************/
+
+
+/***********************************/
+/* DROPDOWN LIST CATEGORY IN START TRAINING */
+
+/* Makes the drop down options in CATEGORY align with the CATEGORY div*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* A list has dots as default, this code deletes them */
+#containerDropdown ul {
+  list-style: none;
+}
+
+/* General appearance of the list*/
+#containerDropdown ul li{
+  background-color: white;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  color: #E77474;
+  font-size: 19px;
+  font-weight: bold;
+  }
+
+/* Makes the options blue when hovering over the options */
+#containerDropdown ul li:hover{
+  color: #FBD0C0;
+}
+
+/* Makes sure the options of the drop down list CATEGORY 
+is not visible all the time */
+#containerDropdown ul ul{
+  display: none;
+}
+
+/* Makes the options of CATEGORY visible when hovering
+over "CATEGORY" */
+#containerDropdown ul li:hover > ul{
+  display: block;
+}
+/***********************************/
+
+
+/***********************************/
+/* ALL TRAINING */
+
+/* THIS CODE CAN BE IMPROVED, SOME CODE SAME AS DROPDOWN */
+ 
+#containerAlltrain ul {
+  list-style: none;
+}
+
+#containerAlltrain ul li{
+  font-size: 19px;
+  font-weight: bold;
+  height: 50px;
+  color: #E77474;
+
+  }
+
+
+
+/***********************************/
