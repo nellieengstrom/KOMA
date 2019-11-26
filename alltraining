@@ -12,28 +12,33 @@ function AllTraining(props) {
         </div>
 
         <div> <h3> ALL TRAINING </h3> </div>
-
+        
         {/* Staple laying down with the percent */}
         <div id="containerAlltrain">
           <ul>
               <li>
                 <Link to="/agility"> <div> <h3> AGILITY </h3> </div></Link>
+                {Bar(10)}
               </li>
 
               <li>
                 <Link to="/agility"> <div> <h3> OBEDIENCE </h3> </div></Link>
+                {Bar(5)}
               </li>
 
               <li>
                 <Link to="/agility"> <div> <h3> TRICKS </h3> </div></Link>
+                {Bar(1)}
               </li>
 
               <li>
                 <Link to="/agility"> <div> <h3> HUNT </h3> </div></Link>
+                {Bar(8)}
               </li>
 
               <li>
                 <Link to="/agility"> <div> <h3> SOCIAL TRAINING </h3> </div></Link>
+                {Bar(2)}
               </li>
           </ul>
         </div>
@@ -41,5 +46,22 @@ function AllTraining(props) {
       </div>
           
       );
+
+
+    function Bar(props){
+      let ratiopercent = (props*10) + "%"; 
+      return(
+        <div className = "bar-Container">
+          <div className = "animated-Bar"style= {{
+              width: ratiopercent,
+              height: "1em",
+              backgroundColor: "#E77474"
+            }} >
+          </div>
+        </div>
+
+
+        );
+    }
   }
   export default AllTraining;
