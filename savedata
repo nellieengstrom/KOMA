@@ -4,12 +4,12 @@ class agility extends React.Component{
 	
   constructor(props) {
     super(props);
-    this.state = {value: null}; /*set the default state of the class*/	
+    this.state = {value: 0}; /*set the default state of the class*/	
 	}
 
 	render(){
 		return(
-			<button onClick={() => this.setState({value: "1"})}>
+			<button onClick={() => this.setState({value++})}>
     			{this.state.value} {{/*will be 1 after button is clicked?*/}}
   			</button>);
 		/*re-render the class and change the state to 1 (should not be button but when the counter in done)*/
@@ -27,8 +27,13 @@ class levelagility extends agility{
 		if(agility.state.value == 10){ 
 			yes = "you leveled up";
 		}
+
 		return(
 			<p> yes </p>);
+		agility.state.value = 0;
 	}
 }
+
+
+
 
